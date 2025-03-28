@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <title>Full Screen Media - System of a Down</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Back Button -->
+  <a href="media.html" class="btn btn-secondary back-btn" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">&larr; Back to Gallery</a>
+  
+  <div class="fullscreen-container">
+    <img id="fullscreen-image" src="/placeholder.svg" alt="Full Screen Media" />
+  </div>
+  
+  <!-- Return to Top Button - Added by common.js -->
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Common JavaScript -->
+  <script src="js/common.js"></script>
+  <script>
+    // Parse the query string to get the 'img' parameter.
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+    
+    // Set the image src based on the query parameter.
+    const imageName = getQueryParam('img');
+    if(imageName) {
+      // Adjust the path if necessary.
+      document.getElementById('fullscreen-image').src = 'images/SOAD Media/' + imageName;
+      document.getElementById('fullscreen-image').alt = 'System of a Down - ' + imageName.replace('.jpg', '').replace('.gif', '');
+      document.title = 'System of a Down - ' + imageName.replace('.jpg', '').replace('.gif', '');
+    }
+  </script>
+</body>
+</html>
+

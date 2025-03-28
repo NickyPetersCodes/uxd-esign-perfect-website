@@ -1,0 +1,353 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<title>System of a Down - Official Website</title>
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Meta description for SEO -->
+<meta name="description" content="Official website of System of a Down. Explore music, tour dates, merchandise, and more from the Grammy-winning rock band.">
+</head>
+<body>
+<!-- Skip to main content link for keyboard users -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Header Area - Fixed Navigation -->
+<header class="header-area" role="banner">
+  <div class="container">
+    <nav class="main-nav" aria-label="Main navigation">
+      <!-- Logo links to home -->
+      <a href="index.html" class="logo" aria-label="System of a Down Home">
+        <img src="images/logo.png" alt="System of a Down Logo" />
+      </a>
+      <!-- Main Navigation -->
+      <ul class="nav">
+        <li><a href="#live" class="active">Home</a></li>
+        <li><a href="discography.html">Music</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="media.html">Media</a></li>
+        <!-- Cart Icon with Badge -->
+        <li>
+          <a href="cart.html" class="cart-icon-container" aria-label="Shopping Cart">
+            <img src="images/cart.png" alt="Cart" class="social-icon" />
+            <span id="cartCount" class="cart-badge" style="display: none;" aria-hidden="true">0</span>
+            <span class="sr-only">Items in cart: </span><span class="sr-only" id="cartCountAnnounce">0</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Mobile menu toggle button -->
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <span class="menu-icon"></span>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#live" class="active">Home</a></li>
+        <li><a href="discography.html">Music</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section - Video Background -->
+<section id="live" class="live-video-section">
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="background-video" aria-hidden="true">
+      <source src="videos/SOAD.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-overlay-content">
+    <h1>System of a Down</h1>
+    <p>Grammy-winning rock band known for their unique sound and powerful messages</p>
+    <a href="tour.html" class="btn btn-primary btn-lg">View Tour Dates</a>
+    <a href="store.html" class="btn btn-outline-primary btn-lg">Shop Merch</a>
+  </div>
+</section>
+
+<!-- Main content area for skip link target -->
+<main id="main-content">
+
+<!-- Discography Section - Improved Carousel -->
+<section id="discography" class="discography-section" aria-labelledby="discography-heading">
+  <div class="container">
+    <div class="section-header">
+      <img src="images/vinyl.png" alt="" aria-hidden="true" class="section-icon" />
+      <h2 id="discography-heading">Our Music</h2>
+      <p>Explore System of a Down's discography spanning over two decades</p>
+    </div>
+    <div class="discography-wrapper">
+      <!-- Left arrow button -->
+      <button class="scroll-btn left" onclick="scrollDiscography('left')" aria-label="Scroll left">&#9664;</button>
+      <div class="discography-scroll" role="region" aria-label="Album carousel">
+        <!-- Updated album images to match store -->
+        <div class="discography-item">
+          <img src="images/toxicity.jpg" alt="Toxicity album cover" class="album-image" />
+        </div>
+        <div class="discography-item">
+          <img src="images/mezmerize.jpg" alt="Mezmerize album cover" class="album-image" />
+        </div>
+        <div class="discography-item">
+          <img src="images/hypnotize.jpg" alt="Hypnotize album cover" class="album-image" />
+        </div>
+        <div class="discography-item">
+          <img src="images/StealThisAlbum.jpg" alt="Steal This Album album cover" class="album-image" />
+        </div>
+        <div class="discography-item">
+          <img src="images/SystemofaDown.jpg" alt="System of a Down album cover" class="album-image" />
+        </div>
+        <div class="discography-item">
+          <img src="images/PTL.jpg" alt="Protect the Land album cover" class="album-image" />
+        </div>
+      </div>
+      <!-- Right arrow button -->
+      <button class="scroll-btn right" onclick="scrollDiscography('right')" aria-label="Scroll right">&#9654;</button>
+    </div>
+    <div class="text-center mt-5">
+      <a href="discography.html" class="btn btn-primary section-button">View All Albums</a>
+    </div>
+  </div>
+</section>
+
+<!-- Store Section - Clear Grid Layout -->
+<section id="store" class="shop-section" aria-labelledby="store-heading">
+  <div class="container">
+    <div class="section-header">
+      <img src="images/cart.png" alt="" aria-hidden="true" class="section-icon" />
+      <h2 id="store-heading">Official Merchandise</h2>
+      <p>Get the latest System of a Down merchandise</p>
+    </div>
+    <div class="store-wrapper">
+      <div class="store-items">
+        <!-- Featured products with clear titles and prices - Updated all album prices to $19.99 -->
+        <div class="store-item">
+          <img src="images/toxicity.jpg" alt="Toxicity album cover" class="img-fluid" />
+          <h4 class="product-title">Toxicity<br><span>$19.99</span></h4>
+          <a href="product.html?id=music1" class="view-product-btn">View Details</a>
+        </div>
+        <div class="store-item">
+          <img src="images/mezmerize.jpg" alt="Mezmerize album cover" class="img-fluid" />
+          <h4 class="product-title">Mezmerize<br><span>$19.99</span></h4>
+          <a href="product.html?id=music2" class="view-product-btn">View Details</a>
+        </div>
+        <div class="store-item">
+          <img src="images/hypnotize.jpg" alt="Hypnotize album cover" class="img-fluid" />
+          <h4 class="product-title">Hypnotize<br><span>$19.99</span></h4>
+          <a href="product.html?id=music3" class="view-product-btn">View Details</a>
+        </div>
+        <div class="store-item">
+          <img src="images/StealThisAlbum.jpg" alt="Steal This Album album cover" class="img-fluid" />
+          <h4 class="product-title">Steal This Album<br><span>$19.99</span></h4>
+          <a href="product.html?id=music4" class="view-product-btn">View Details</a>
+        </div>
+        <div class="store-item">
+          <img src="images/SystemofaDown.jpg" alt="System of a Down album cover" class="img-fluid" />
+          <h4 class="product-title">System of a Down<br><span>$19.99</span></h4>
+          <a href="product.html?id=music5" class="view-product-btn">View Details</a>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="store.html" class="btn btn-primary shop-now-btn">Shop All Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tour Dates Section - Clear Visual Hierarchy -->
+<section id="tour" class="tour-section" aria-labelledby="tour-heading">
+  <div class="container">
+    <div class="section-header">
+      <img src="images/tour.png" alt="" aria-hidden="true" class="section-icon" />
+      <h2 id="tour-heading">Upcoming Tour Dates</h2>
+      <p>Join us live on our world tour</p>
+    </div>
+    <div class="tour-items">
+      <!-- Featured tour dates with clear CTAs -->
+      <div class="tour-item">
+        <h5>Los Angeles, CA</h5>
+        <p>September 15, 2025<br>The Forum</p>
+        <a href="tour.html" class="btn btn-primary">Get Tickets</a>
+      </div>
+      <div class="tour-item">
+        <h5>New York, NY</h5>
+        <p>October 3, 2025<br>Madison Square Garden</p>
+        <a href="tour.html" class="btn btn-primary">Get Tickets</a>
+      </div>
+      <div class="tour-item">
+        <h5>Chicago, IL</h5>
+        <p>November 7, 2025<br>United Center</p>
+        <a href="tour.html" class="btn btn-primary">Get Tickets</a>
+      </div>
+      <div class="tour-item">
+        <h5>London, UK</h5>
+        <p>December 5, 2025<br>O2 Arena</p>
+        <a href="tour.html" class="btn btn-primary">Get Tickets</a>
+      </div>
+      <div class="tour-item">
+        <h5>Paris, France</h5>
+        <p>January 20, 2026<br>AccorHotels Arena</p>
+        <a href="tour.html" class="btn btn-primary">Get Tickets</a>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="tour.html" class="btn btn-primary section-button">View All Tour Dates</a>
+    </div>
+  </div>
+</section>
+
+<!-- Media Section - Clean Grid Layout -->
+<section id="media" class="media-section" aria-labelledby="media-heading">
+  <div class="container">
+    <div class="section-header">
+      <img src="images/media.png" alt="" aria-hidden="true" class="section-icon" />
+      <h2 id="media-heading">Media Gallery</h2>
+      <p>Photos and videos from performances and behind the scenes</p>
+    </div>
+    <div class="media-wrapper">
+      <div class="media-items">
+        <!-- Featured media with hover effects -->
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media1.jpg">
+            <img src="images/SOAD Media/media1.jpg" alt="System of a Down performing live" class="img-fluid" />
+          </a>
+        </div>
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media3.jpg">
+            <img src="images/SOAD Media/media3.jpg" alt="Band photoshoot" class="img-fluid" />
+          </a>
+        </div>
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media11.jpg">
+            <img src="images/SOAD Media/media11.jpg" alt="Concert crowd" class="img-fluid" />
+          </a>
+        </div>
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media9.jpg">
+            <img src="images/SOAD Media/media9.jpg" alt="Band members" class="img-fluid" />
+          </a>
+        </div>
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media17.gif">
+            <img src="images/SOAD Media/media17.gif" alt="Animated performance" class="img-fluid" />
+          </a>
+        </div>
+        <div class="media-item">
+          <a href="media-fullscreen.html?img=media19.jpg">
+            <img src="images/SOAD Media/media19.jpg" alt="Stage performance" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="media.html" class="btn btn-primary media-btn">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="text-center">© 2025 System of a Down. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Return to Top Button - Added by common.js -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Cart management script -->
+<script src="js/cart.js"></script>
+<!-- Common JavaScript -->
+<script src="js/common.js"></script>
+
+<!-- Custom JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Randomize the video source
+    const videos = ["videos/SOAD.mp4", "videos/SOAD2.mp4", "videos/SOAD3.mp4"];
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+    const video = document.querySelector('.background-video');
+    const source = video.querySelector('source');
+    source.src = randomVideo;
+    video.load();
+
+    // Set video start time to 10 seconds
+    video.addEventListener('loadedmetadata', function() {
+      video.currentTime = 10;
+    });
+    
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('active');
+        mobileMenu.setAttribute('aria-hidden', expanded);
+      });
+    }
+  });
+  
+  // Smooth scrolling for discography carousel
+  function scrollDiscography(direction) {
+    const container = document.querySelector('.discography-scroll');
+    const scrollAmount = 300;
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
+  
+  // Change nav background on scroll
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header-area');
+    const videoHeight = document.querySelector('.live-video-section').offsetHeight;
+    if (window.scrollY >= videoHeight - header.offsetHeight) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  // Keyboard navigation for carousel
+  document.addEventListener('keydown', function(e) {
+    if (document.activeElement.closest('.discography-scroll')) {
+      if (e.key === 'ArrowLeft') {
+        scrollDiscography('left');
+        e.preventDefault();
+      } else if (e.key === 'ArrowRight') {
+        scrollDiscography('right');
+        e.preventDefault();
+      }
+    }
+  });
+</script>
+</body>
+</html>
+
